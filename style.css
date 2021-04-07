@@ -1,0 +1,32 @@
+div {
+    margin: auto;
+}
+
+.logo {
+    height: 40px;
+    width: auto;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.aaa {
+    text-align: center;
+}
+
+footer {
+    text-align: center;
+}
+
+a {
+    color: grey;
+}
+
+@media screen and (max-width: 770px) {
+    .aaa {
+        padding: 50px;
+    }
+}
+

@@ -1,0 +1,75 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <link href="css/lightbox.css" rel="stylesheet" />
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="style.css" rel="stylesheet" type="text/css"/>
+    <title>Hello, world!</title>
+  </head>
+
+  <body>
+    <div>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">  <!--Pirmas sudetingesnis komponentas (navbar)-->
+            <a class="navbar-brand" href="#"><img src="toyota.png" class="logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">  
+              <span class="navbar-toggler-icon"></span>  <!--komponentas Button-->
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+              <div class="navbar-nav">
+                <a class="nav-item nav-link active" href="index.html">2020 86 <span class="sr-only">(current)</span></a>
+                <a class="nav-item nav-link" href="index2.html">2020 GR Supra</a>
+              </div>
+            </div>
+          </nav>
+    </div>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="aaa col-md-5">  <!--Eilutes su skirtinga stulpeliu konfiguracija-->
+                <h4>2020 Toyota 86 <span class="badge badge-secondary">New</span></h4>  <!--komponentas Badge-->
+                <h6>Track Proven. Street ready.</h6>
+            </div>
+            <div class="col-md-7">
+              <a href="86s.jpg" data-lightbox="GT86">
+                <img src="86s.jpg">
+              </a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-7">
+                <div class="siema">  
+                    <div>
+                      <img src="86f.jpg" data-toggle="tooltip" title="Drag to see more photos">
+                    </div>
+                    <div>
+                      <img src="86b.jpg" data-toggle="tooltip" title="Drag to see more photos">
+                    </div>
+                </div>
+            </div>
+            <div class="aaa col-md-5">
+                <h4>The road is calling. <br> Strap in.</h4>
+                <a class="link" href="https://www.toyota.com/86/" data-toggle="tooltip" title="Go to official website">Choose your 86</a> <!--komponentas Tooltip-->
+            </div>
+        </div>
+    </div>
+    <footer>
+        <img src="logo.png" class="logo">
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    <script src="js/lightbox-plus-jquery.js"></script>
+    <script src="siema.min.js"></script>
+    <script>
+      lightbox.option({
+        'resizeDuration': 300
+      })
+    </script>
+    <script>
+      const mySiema = new Siema({
+        loop: true
+      });
+    </script>
+  </body>
+</html>
